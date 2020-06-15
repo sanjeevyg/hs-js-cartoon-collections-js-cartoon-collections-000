@@ -7,6 +7,14 @@
 //   return array.splice(dwarves.length/2, dwarves.length).join(' ') 
 // }
 
+function dwarfRollCall(dwarves) {
+  var array = []; 
+  for (let i = 0; i < dwarves.length; i++) {
+    array.push(`${(parseInt([i]) + 1)}. ${dwarves[i]}`)
+  }
+  return array.join(' ') + " "
+}
+
 /* Second Method
 
 function dwarfRollCall(dwarves) {
