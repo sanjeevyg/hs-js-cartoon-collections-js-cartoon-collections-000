@@ -50,14 +50,14 @@ for (let i = 0; i < cheese.length; i++) {
 return "no cheese!"
 }
 
-function startsWithB(words) {
-  let array = [];
-  for (let i = 0; i < words.length; i++) {
-    if (words[i][0] === "b") {
-      array.push(words[i][0])
-    }
-} return array
-}
+// function startsWithB(words) {
+//   let array = [];
+//   for (let i = 0; i < words.length; i++) {
+//     if (words[i][0] === "b") {
+//       array.push(words[i][0])
+//     }
+// } return array
+// }
 
 
 
