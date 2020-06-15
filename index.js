@@ -1,4 +1,12 @@
 
+// function dwarfRollCall(dwarves) {
+//   var array = []; 
+//   for (let i = 0; i < dwarves.length; i++) {
+//     array.push(`${(parseInt([i]) + 1)}. ${dwarves[i]}`)
+//   }
+//   return array.splice(dwarves.length/2, dwarves.length).join(' ') 
+// }
+
 function dwarfRollCall(dwarves) {
   var array = []; 
   for (let i = 0; i < dwarves.length; i++) {
@@ -7,14 +15,16 @@ function dwarfRollCall(dwarves) {
   return array.join(' ') + " "
 }
 
-/* function dwarfRollCall(dwarves) {
+/* Second Method
+
+function dwarfRollCall(dwarves) {
   var array = []; 
   for (let i = 0; i < dwarves.length; i++) {
     array.push(`${(parseInt([i]) + 1)}. ${dwarves[i]}`)
   }
   let sum = array[0]
-  for (let i = 1; i < array.length; i++) {
-    sum += (" " + array[i])
+  for (let j = 1; j < array.length; j++) {
+    sum += (" " + array[j])
   }
   return sum + " "
 } */
@@ -37,24 +47,41 @@ for (let i = 0; i < words.length; i++) {
 }
 }
 
+
 function findTheCheese(foods) {
-let cheese = ["cheddar", "gouda", "camembert"];
-let array = []
-while (foods || foods === 0) {
-if (cheese.includes(foods)) {
-return foods
-}
-if (Array.isArray(foods)) {
-for (let i = 0; i < foods.length; i++) {
-array.push(foods[i])
-}
-}
-foods = array.shift()
+let cheese = ["cheddar", "gouda", "thyme",];
+for (let i = 0; i < cheese.length; i++) {
+  if (foods.includes(cheese[i])) {
+    return cheese[i]
+  }
 }
 return "no cheese!"
 }
 
+// function startsWithB(words) {
+//   let array = [];
+//   for (let i = 0; i < words.length; i++) {
+//     if (words[i][0] === "b") {
+//       array.push(words[i][0])
+//     }
+// } return array
+// }
 
+
+
+/* second method
+
+function findTheCheese(foods) {
+let cheese = ["cheddar", "gouda", "camembert"];
+for (let i = 0; i < foods.length; i++) {
+for (let a = 0; a < cheese.length; a++) {
+if (foods[i] === cheese[a]) {
+return foods[i]
+}
+}
+}
+return "no cheese!"
+}*/
 
 
 
